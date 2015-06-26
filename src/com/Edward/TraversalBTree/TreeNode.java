@@ -1,4 +1,4 @@
-package com.Edward.InorderTraversalBTree;
+package com.Edward.TraversalBTree;
 
 public class TreeNode {
 	public int val;

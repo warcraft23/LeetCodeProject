@@ -1,10 +1,10 @@
-package com.Edward.InorderTraversalBTree;
+package com.Edward.TraversalBTree;
 
 import java.util.List;
 import java.util.ArrayList;
 
 public class InorderTraversalBTree {
-	public static List<Integer> inorderTraversal(TreeNode root){
+	public static List<Integer> inorderTraversalRecursion(TreeNode root){
 		
 		//recursion method
 		
@@ -21,14 +21,14 @@ public class InorderTraversalBTree {
 		//Recursion
 		if(root.left!=null)
 		{
-			leftList=inorderTraversal(root.left);
+			leftList=inorderTraversalRecursion(root.left);
 			list.addAll(leftList);
 		}
 		mid=Integer.valueOf(root.val);
 		list.add(mid);
 		if(root.right!=null)
 		{
-			rightList=inorderTraversal(root.right);
+			rightList=inorderTraversalRecursion(root.right);
 			list.addAll(rightList);
 		}
 		
