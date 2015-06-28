@@ -10,13 +10,13 @@ public class driver {
 		//TreeNode nullNode=new TreeNode();
 		
 		TreeNode node1=new TreeNode(0);
-		TreeNode node2=new TreeNode(-1);
+		TreeNode node2=new TreeNode(Integer.MAX_VALUE);
 		TreeNode node3=new TreeNode(3);
 		
-		node1.left=node2;
+		//node1.left=node2;
 		//node2.right=node3;
 		
-		if(ValidateSearchBTree.isValidBSTInorder(node2)){
+		if(ValidateSearchBTree.isValidBST(node2)){
 			System.out.println("BST!");
 		}else{
 			System.out.println("Not BST!");
